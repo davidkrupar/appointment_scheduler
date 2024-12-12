@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="0.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsController">
+   <top>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+            <children>
+            <Text boundsType="VISUAL" layoutX="15.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointments By Type" textAlignment="CENTER" textOrigin="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="reportsByType" layoutX="280.0" layoutY="31.0" onAction="#onReportsByType" prefWidth="150.0" />
+            <ComboBox fx:id="reportsByMonth" layoutX="280.0" layoutY="177.0" onAction="#onReportsByMonth" prefWidth="150.0" />
+            <ComboBox fx:id="reportsByContact" layoutX="280.0" layoutY="324.0" onAction="#onReportsByContact" prefWidth="150.0" />
+            <ComboBox fx:id="reportsByPast" layoutX="280.0" layoutY="476.0" onAction="#onReportsByPast" prefWidth="150.0" />
+            <Text boundsType="VISUAL" layoutX="15.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointments By Month" textAlignment="CENTER" textOrigin="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text boundsType="VISUAL" layoutX="15.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointments By Contact" textAlignment="CENTER" textOrigin="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text boundsType="VISUAL" layoutX="15.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Past Appointments By Contact" textAlignment="CENTER" textOrigin="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="623.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Text>
+            <TableView fx:id="reportsTable1" editable="true" layoutX="15.0" layoutY="61.0" prefHeight="105.0" prefWidth="971.0">
+               <columns>
+                  <TableColumn fx:id="reportsAppointmentId1" prefWidth="85.0" text="Appointment " />
+                  <TableColumn fx:id="reportsAppointmentTitle1" prefWidth="70.0" text="Title" />
+                  <TableColumn fx:id="reportsDescription1" prefWidth="100.0" text="Description" />
+                  <TableColumn fx:id="reportsLocation1" prefWidth="78.0" text="Location" />
+                  <TableColumn fx:id="reportsContactID1" prefWidth="130.0" text="Contact " />
+                  <TableColumn fx:id="reportsType1" prefWidth="105.0" text="Type" />
+                  <TableColumn fx:id="reportsStart1" prefWidth="135.0" text="Start" />
+                  <TableColumn fx:id="reportsEnd1" prefWidth="135.0" text="End" />
+                  <TableColumn fx:id="reportsCustomerId1" prefWidth="76.0" text="Customer_ID" />
+                  <TableColumn fx:id="reportsUserId1" prefWidth="56.0" text="User_ID" />
+               </columns>
+            </TableView>
+            <Button fx:id="reportsReturnToMain" layoutX="880.0" layoutY="18.0" mnemonicParsing="false" onAction="#onReportsReturnToMain" text="Return to Main" />
+            <TableView fx:id="reportsTable2" editable="true" layoutX="15.0" layoutY="208.0" prefHeight="105.0" prefWidth="971.0">
+               <columns>
+                  <TableColumn fx:id="reportsAppointmentId2" prefWidth="85.0" text="Appointment " />
+                  <TableColumn fx:id="reportsAppointmentTitle2" prefWidth="70.0" text="Title" />
+                  <TableColumn fx:id="reportsDescription2" prefWidth="100.0" text="Description" />
+                  <TableColumn fx:id="reportsLocation2" prefWidth="78.0" text="Location" />
+                  <TableColumn fx:id="reportsContactID2" prefWidth="130.0" text="Contact " />
+                  <TableColumn fx:id="reportsType2" prefWidth="105.0" text="Type" />
+                  <TableColumn fx:id="reportsStart2" prefWidth="135.0" text="Start" />
+                  <TableColumn fx:id="reportsEnd2" prefWidth="135.0" text="End" />
+                  <TableColumn fx:id="reportsCustomerId2" prefWidth="76.0" text="Customer_ID" />
+                  <TableColumn fx:id="reportsUserId2" prefWidth="56.0" text="User_ID" />
+               </columns>
+            </TableView>
+            <TableView fx:id="reportsTable3" editable="true" layoutX="15.0" layoutY="357.0" prefHeight="105.0" prefWidth="971.0">
+               <columns>
+                  <TableColumn fx:id="reportsAppointmentId3" prefWidth="85.0" text="Appointment " />
+                  <TableColumn fx:id="reportsAppointmentTitle3" prefWidth="70.0" text="Title" />
+                  <TableColumn fx:id="reportsDescription3" prefWidth="100.0" text="Description" />
+                  <TableColumn fx:id="reportsLocation3" prefWidth="78.0" text="Location" />
+                  <TableColumn fx:id="reportsContactID3" prefWidth="130.0" text="Contact " />
+                  <TableColumn fx:id="reportsType3" prefWidth="105.0" text="Type" />
+                  <TableColumn fx:id="reportsStart3" prefWidth="135.0" text="Start" />
+                  <TableColumn fx:id="reportsEnd3" prefWidth="135.0" text="End" />
+                  <TableColumn fx:id="reportsCustomerId3" prefWidth="76.0" text="Customer_ID" />
+                  <TableColumn fx:id="reportsUserId3" prefWidth="56.0" text="User_ID" />
+               </columns>
+            </TableView>
+            <TableView fx:id="reportsTable4" editable="true" layoutX="15.0" layoutY="506.0" prefHeight="105.0" prefWidth="971.0">
+               <columns>
+                  <TableColumn fx:id="reportsAppointmentId4" prefWidth="85.0" text="Appointment " />
+                  <TableColumn fx:id="reportsAppointmentTitle4" prefWidth="70.0" text="Title" />
+                  <TableColumn fx:id="reportsDescription4" prefWidth="100.0" text="Description" />
+                  <TableColumn fx:id="reportsLocation4" prefWidth="78.0" text="Location" />
+                  <TableColumn fx:id="reportsContactID4" prefWidth="130.0" text="Contact " />
+                  <TableColumn fx:id="reportsType4" prefWidth="105.0" text="Type" />
+                  <TableColumn fx:id="reportsStart4" prefWidth="135.0" text="Start" />
+                  <TableColumn fx:id="reportsEnd4" prefWidth="135.0" text="End" />
+                  <TableColumn fx:id="reportsCustomerId4" prefWidth="76.0" text="Customer_ID" />
+                  <TableColumn fx:id="reportsUserId4" prefWidth="56.0" text="User_ID" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
